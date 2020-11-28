@@ -59,20 +59,20 @@ def f():
     text_box.insert(INSERT, "\n")
     text_box.configure(state = 'disabled')
 
-p1 = PhotoImage(file = r"D:\Study\Programs\Python\Mini Project\icons\QuickTech Icon.png")
+p1 = PhotoImage(file = r"icons/QuickTech Icon.png")
 root.iconphoto(False, p1)
 
 text_box = Text(root, height = 16, width = 114, font = ("Cascadia Code PL, Helvetica", 18), wrap = WORD, padx = 10, pady = 10, bd = 5, selectbackground = "blue")
 text_box.place(x = 15, y = 330)
 text_box.configure(state = 'disabled')
 
-photo_ndtv = PhotoImage(file = r"D:\Study\Programs\Python\Mini Project\icons\NDTV.png") 
-photo_indian = PhotoImage(file = r"D:\Study\Programs\Python\Mini Project\icons\INDIAN.png")
-photo_cnet = PhotoImage(file =r"D:\Study\Programs\Python\Mini Project\icons\CNET.png")
-photo_zee = PhotoImage(file = r"D:\Study\Programs\Python\Mini Project\icons\ZEE.png")
-photo_today = PhotoImage(file = r"D:\Study\Programs\Python\Mini Project\icons\TODAY.png")
-photo_mint = PhotoImage(file = r"D:\Study\Programs\Python\Mini Project\icons\MINT.png")
-photo_clear = PhotoImage(file = r"D:\Study\Programs\Python\Mini Project\icons\CLEAR.png")
+photo_ndtv = PhotoImage(file = r"icons/NDTV.png") 
+photo_indian = PhotoImage(file = r"icons/INDIAN.png")
+photo_cnet = PhotoImage(file =r"icons/CNET.png")
+photo_zee = PhotoImage(file = r"icons/ZEE.png")
+photo_today = PhotoImage(file = r"icons/TODAY.png")
+photo_mint = PhotoImage(file = r"icons/MINT.png")
+photo_clear = PhotoImage(file = r"icons/CLEAR.png")
 
 button_ndtv = Button(root, image = photo_ndtv, bd = 2, command = a)
 button_indian = Button(root, image = photo_indian, bd =2, command = b)

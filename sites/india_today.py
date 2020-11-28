@@ -28,4 +28,5 @@ def today():
 		List.append(Y.get_text())
 	for i in List:
 		s = s + "\n🌐" + i
+		
 	return s

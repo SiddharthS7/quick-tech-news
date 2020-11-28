@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+
 def mint():
     url = 'https://www.livemint.com/technology/tech-news'
     page = requests.get(url)
@@ -8,6 +9,7 @@ def mint():
     List = []
     s = ""
     count = 0
+
     for i in cl:
         if("How" in i.text):
             continue
@@ -20,4 +22,5 @@ def mint():
             List.append(i.text[:-25])
     for i in List:
         s = s + "\n🌐" + i
+        
     return s
