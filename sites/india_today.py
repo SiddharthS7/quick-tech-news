@@ -5,7 +5,7 @@ def today():
 	url1 = 'https://www.indiatoday.in/technology/news'
 	page = requests.get(url1)
 	soup = BeautifulSoup(page.content, 'html.parser')
-	cl = soup.findAll(class_='catagory-listing')
+	cl = soup.findAll(class_='B1S3_content__wrap__9mSB6')
 	List = []
 	count=0
 	s = ""

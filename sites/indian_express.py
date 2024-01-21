@@ -6,14 +6,9 @@ def express():
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
     cl = soup.findAll(class_ = 'article-list')
-    txt = cl[0].text
-    cl = txt.split("\n\n\n\n\n\n\n\n")
     list = []
     s = ""
-
-    for i in cl:
-        list.append("\n")
-        list.append(i)
+    list = [i.text for i in cl[0].findAll('a')]
     list[1] = list[1].replace("\n\n\n\n\n\n\n","")
     k = 0
     for i in list:
